@@ -1,0 +1,10 @@
+services:
+  nodeexample:
+    build: .
+    command: node index.js
+    ports:
+      - 3002:3000
+  postgres:
+    image: "postgres:latest"
+    ports:
+      - 5432
